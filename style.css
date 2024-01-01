@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.conatainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    /* z-index: -1; */
+}
+#background {
+    transform: translateZ(-39px) scale(5);
+  }
+  #foreground {
+    transform: translateZ(-20px) scale(3);
+  }
+.conatainer img {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    /* z-index: -1; */
+  }
